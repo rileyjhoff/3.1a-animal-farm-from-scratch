@@ -15,11 +15,14 @@ describe('3.1a-zodiac-from-scratch routes', () => {
     expect(res.body).toEqual(expected);
   });
 
-  // it('/zodiac/:id should return zodiac detail matching id in params', async () => {
-  //   const res = await request(app).get('/zodiac');
-  //   const expected
-  //   expect(res.body).toEqual(expected);
-  // });
+  it('/zodiac/:id should return zodiac detail matching id in params', async () => {
+    const res = await request(app).get('/zodiac/1');
+    const expected = {
+      id: '1',
+      name: 'aquarius',
+    };
+    expect(res.body).toEqual(expected);
+  });
 
   afterAll(() => {
     pool.end();
