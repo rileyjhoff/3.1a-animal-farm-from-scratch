@@ -1,4 +1,4 @@
-const zodiacs = [
+const zodiac = [
   { id: '1', name: 'aquarius' },
   { id: '2', name: 'aries' },
   { id: '3', name: 'cancer' },
@@ -13,4 +13,4 @@ const zodiacs = [
   { id: '12', name: 'virgo' },
 ];
 
-module.exports = { zodiacs };
+module.exports = { zodiac };
